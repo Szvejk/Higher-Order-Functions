@@ -74,7 +74,6 @@
 
 // zadanie 1
 // const text =["Jestem (sample.Obj(name)) i mam (sample.Obj(age)) lat"]
-// const string = sample.Obj.map((text) => {
 //     return text()
 // });
  
@@ -85,14 +84,13 @@
 //  let yourAge = document.getElementById("age")  // age wpisany w input w html
 //  const calculate = () => {
 // bornYear = currentYear - yourAge;
-
 //  }
 //  return (bornYear);
+
 // const presentation = [name === "Sara", age = 23]; let bornYear = presentation.keys(); for (let key of bornYear) (console.log(key))
 
 // ## Zadanie 3
 // Za pomocą filter wyciągnij z tabliy sampleObj osoby które mają więcej niż 25 lat.
-// 
 // const filterArray = sample.Obj.filter((age>25));
 // console.log(filterArray);
 
@@ -117,8 +115,8 @@
 ​
 // ## Zadanie 5 !
 // Za pomocą map połącz osoby z sampleObj i książki z books tak aby pierwsza osoba miała pierwszą książkę, druga drugą itd.
-// ​
-
+// // ​
+// przyklad z internetu - nie wiem jak przeksztalcic
 // // _.map( (array1, array2), function(knownValue, indexOfArray1, indexOfArray2) );
 
 // const a1 = ['a', 'b', 'c'];
@@ -138,9 +136,6 @@
 // ]
 // const result = books.filter(price => price.typeof === string)
 // console.log(result)
-
-
-
 // }
 // ​
 // ## Zadanie 7
@@ -153,10 +148,10 @@
 // const found = books.find(name === "Kosmos" => price);
 // console.log(found)
 
+
 // ## Zadanie 8
 // Sprawdź za pomocą every czy każda książka kosztuje powyżej 50
 // ​
-
 // books.every(checkPrize)
 // function checkPrize(books) {
 //     return books > 50;
@@ -166,7 +161,6 @@
 // ## Zadanie 9
 // Sprawdź za pomocą some czy jakaś książka kosztuje poniżej 40
 // // ​
-
 // const even = (element) => prize < 40;
 // console.log(array.some(even));
 
@@ -186,18 +180,15 @@
 ​
 // ## Zadanie 11
 // Zsumuj wiek wszystkich osób za pomocą reduce i oblicz średnią wieku
-// ​
-
 //     average = sampleObj.reduce(function (sum, age) {
 //         return sum + age;
 //     }, 0) / array.length;
 
 // console.log(average);
 
+
 // ## Zadanie 12
 // Za pomocą forEach znajdź najmłodszą i najstarszą osobę i oblicz ich różnicę wieku
-
-
 // // sampleObj.forEach(function(age) {
 //   const maximum =  Math.max(sampleObj => age)
 //   return maximum
