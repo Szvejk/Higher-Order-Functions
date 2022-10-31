@@ -95,36 +95,36 @@
 // console.log(filterArray);
 
 
-// ​const sampleObj=[
-//     {name: "Alex", age: 30},
-//     {name: "Piotr", age: 26},
-//     {name: "Patryk", age: 45},
-//     {name: "Agnieszka", age: 20}
-// ]
+// 
 // // ## Zadanie 4
 // // Za pomocą filter wyciągnij z tablicy sampleObj osoby który imię kończy się na a lub r.
 // const filterArray = sampleObj.filter() => sampleObj.endsWith('a||r')
 // return (filterArray)
 
-// const books=[
-//     {name: "Wojna i pokoj",price: '30'},
-//     {name: "Encyklopedia", price: 100},
-//     {name: "Kosmos", price: 65}
-// ]
+// 
 // ```
 ​
 // ## Zadanie 5 !
 // Za pomocą map połącz osoby z sampleObj i książki z books tak aby pierwsza osoba miała pierwszą książkę, druga drugą itd.
 // // ​
-// przyklad z internetu - nie wiem jak przeksztalcic
-// // _.map( (array1, array2), function(knownValue, indexOfArray1, indexOfArray2) );
+// const books=[
+// //     {name: "Wojna i pokoj",price: '30'},
+// //     {name: "Encyklopedia", price: 100},
+// //     {name: "Kosmos", price: 65}
+// // ]
+// for (i=0; i<arr.length;i++){
+//     books.push({​const sampleObj=[
+//     {name: "Alex", age: 30},
+//     {name: "Piotr", age: 26},
+//     {name: "Patryk", age: 45},
+//     {name: "Agnieszka", age: 20}
+// ]})
 
-// const a1 = ['a', 'b', 'c'];
-// const a2 = ['One', 'Two', 'Three'];
 
-// const result = _.zip(a1, a2).map(function([a1_item, a2_item], indexForBoth) { 
-//   return a1_item + a2_item + indexForBoth;
-// });
+
+
+
+
 
 
 // ## Zadanie 6
@@ -191,7 +191,7 @@
 // Za pomocą forEach znajdź najmłodszą i najstarszą osobę i oblicz ich różnicę wieku
 // // sampleObj.forEach(function(age) {
 //   const maximum =  Math.max(sampleObj => age)
-//   return maximum
+//   return maximum;
 //   const minimum = Math.min(sampleObj => age)
 //   return minimum
 // // }
@@ -200,11 +200,14 @@
 
 // ## Zadanie 13 !
 // Wyświetl nazwę książki która jest najtańsza i najdroższa
-// books.reduce(function (price){
-// return Math.max(...price)});
+// books.reduce(function(price){
+// array.find( Math.max(...price)})
+;
+
 
 // books.reduce(function (price) {
-//     return Math.min(...price);
+//     array.find(Math.min(...price));
+
 //   })
 
 
@@ -219,7 +222,7 @@
 
 // console.log(sum);
 
-
+// acc?
 
 
 
