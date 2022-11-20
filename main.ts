@@ -398,18 +398,18 @@
 // // Podpowiedź:<br />
 // // [Dodawanie swoich metod do klas wbudowanych](https://stackoverflow.com/questions/8392035/add-method-to-string-class) sprawdz podejście w ES6 wspomniane w wątku
 
-// // String.prototype.upperFirst =  upperFirst () {
-// // 	let text = "hello"
-// // 	let letter = text.charAt(1)
-// // }
-// // class toArray {
-// // 	arrays=[]
-// // 	constructor(arrays:[]) {
-// // 	this.arrays = []
-// // 	}
-// // 	const newLetter =letter.push(arrays:[])
-// // 	console.log(arrays:[])
-// // }
+// String.prototype.upperFirst =  function upperFirst () {
+// 	let text = "hello"
+// 	let letter = text.charAt(1)
+// }
+// class toArray {
+// 	arrays=[]
+// 	constructor(arrays:[]) {
+// 	this.arrays = []
+// 	}
+// 	const newLetter =letter.push(arrays:[])
+// 	console.log(arrays:[])
+// }
 
 
 
@@ -418,28 +418,28 @@
 // // // ## Zadnie 2
 // // // Do wbudowanej w język JS klasy number dodaj metodę isOdd() sprawdzającą czy liczba jest parzysta i isEven() sprawdzającą czy podana liczba jest nieparzysta.
 // // // ​
-// // class evenOrOdd {
-// // 	evenOrOdd:number;
-// // 	constructor(evenOrOdd:number) {
-// // 		this.evenOrOdd=number;
-// // 	}
-// // }
-// // String.prototype.number = isOdd (number:number) {
-// // 	if (number%2===0) {
-// // 		console.log("parzysta")
-// // 	}
-// // 	 else {
-// // 		console.log("nieparzysta")
-// // 	}
-// // }
-// // String.prototype.number = isEven(number:number) {
-// // 	if (number%2===0) {
-// // 		console.log("parzysta")
-// // 	}
-// // 	 else {
-// // 		console.log("nieparzysta")
-// // 	}
-// // }
+// class evenOrOdd {
+// 	evenOrOdd:number;
+// 	constructor(evenOrOdd:number) {
+// 		this.evenOrOdd=number;
+// 	}
+// }
+// Number.prototype = isOdd (number:number) {
+// 	if (number%2===0) {
+// 		console.log("parzysta")
+// 	}
+// 	 else {
+// 		console.log("nieparzysta")
+// 	}
+// }
+// Number.prototype = isEven(number:number) {
+// 	if (number%2===0) {
+// 		console.log("parzysta")
+// 	}
+// 	 else {
+// 		console.log("nieparzysta")
+// 	}
+// }
 
 // // ## Zadanie 3
 // // Stwórz klasę Akwarium która posiada pola fishes=[], fillLevel.
@@ -545,8 +545,38 @@
 // 		this.flaga=flaga
 // 	}
 
+//  get wiek(wiek:number){
+// return this.wiek;
+//  }
+//  set wiek(wiek:number) {
+//     this.wiek = wiek++;
+   
+//  }
+//   return("Rybka jest teraz starsza")
+
+
+
+// get poziomGłodu(poziomGłodu:number){
+//     return this.poziomGłodu
+// }
+// set poziomGłodu(poziomGłodu:number){
+//     this.poziomGłodu=poziomGłodu--;
 
 // }
+// return("Rybka staje sie coraz bardziej głodna")
+
+// get flaga(flaga:string) {
+//     return this.flaga
+// }
+// set Flaga(flaga:string) {
+//     this.flaga="isHealthy"
+// }
+// return("Rybka jest zdrowa")
+
+
+// }
+
+
 
 
 
@@ -561,10 +591,66 @@
 // - [ ] zainicjalizuj pole w konstruktorze,
 // - [ ] dodaj metode zmieniajaca flage isSleep,
 // ​
+
+// class Gupik extends Fish {
+//     isSleep:boolean;
+//     constructor(checkIfSleep:true){
+//         super(wiek:number, poziomGłodu:number,flaga:string)
+//         this.isSleep=checkIfSleep
+//     }
+// changeFlage() {
+//     if(poziomGłodu<10&checkIfSleep=true){
+//         console.log(checkIfSleep=false&nakarm())
+//     }
+     
+// }
+// }
+
+
+
 // ## Zadanie 6
 // Klasa krewetka dziedziczaca po klasie Fish. Dodaj pole isFiltering informujace po tym czy krewetka filtruje teraz wode czy nie.
 // - [ ] dodaj metode ktora zmienia pole informujace o tym czy krewetka filtruje wode czy nie
 // ​
+
+// class Krewetka extends Fish{
+//     czyFiltruje:boolean
+//     constructor(czyFiltruje:false){
+// super(wiek:number, poziomGłodu:number, flaga:string)
+// this.czyFiltruje=czyFiltruje
+//     }
+//     changeFiltrowanie(czyFiltruje:boolean) {
+// do {
+//     czyFiltruje=true}
+
+// while(czyFiltruje=false)
+// console.log("Teraz krewetka filtruje")
+//     }
+// }
+
+
+
+
 // ## Zadanie 7
 // Stwórz klase AkwariumKwarantanna, która dziedziczy po Akwarium.
 // - [ ] dodaj metode zwroc z kwarantanny ktora wykorzystuje metode addFish z klasy Akwarium
+
+// class AkwariumKwarantanna extends Akwarium {
+//     Kwarantanna:boolean
+//     constructor(Kwarantanna:boolean) {
+//         super(fishes:[5],
+//             fillLevel:number,
+//             poziomGłodu:number,
+//             choroba:boolean,
+//             flage:string,
+//             typRyby:string )
+//             this.Kwarantanna=Kwarantanna
+//     }
+//     zwrocKwarantanna(kwarantanna:boolean){
+//         do{
+//             addFish()
+//         }
+//         while(this.Kwarantanna:yes)
+//       return("Rybka zwrócona z Kwarantanny")
+//     }
+// }
