@@ -1,0 +1,11 @@
+{
+   "compilerOptions": {
+    "module": "amd",
+    "target": "es5",
+    "allowJs": true,
+    "outFile": "script1.js",
+    "strict": true
+  },
+  "files": ["main.ts"],
+  "include": ["main.ts"]
+}
